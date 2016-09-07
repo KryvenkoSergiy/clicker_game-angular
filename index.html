@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="clicker">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ckicker</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body ng-controller="clickerCtrl">
+    <header class="header">
+        <h1 class="">{{message}}</h1>
+    </header>
+    <section class="page-cont cont-width">
+        <div class="game-infobar clrfix">
+            <div class="timer">
+                Time to end
+                <span class="timer-count">{{timerCount}}</span>
+                <div class="timer-controls">
+                    <button class="reset-btn" ng-click="timerStop()">Reset</button>
+                </div>
+            </div>
+            <div class="score">
+                You score
+                <span class="u-score">{{score}}</span>
+            </div>
+        </div>
+        <div class="clickable-cont">
+            <button class="start-prev start-logo" ng-click="timerStart()">Press to start game</button>
+            <div class="game-container">
+                <div class="click-me" ng-click="ClickMe()" style="left:{{left}}px;top:{{top}}px"></div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

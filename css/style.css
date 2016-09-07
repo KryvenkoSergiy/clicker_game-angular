@@ -1,0 +1,345 @@
+@-webkit-keyframes mymove {
+    0% {
+        transform: rotate(0);
+        -ms-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+@keyframes mymove {
+    0% {
+        transform: rotate(0);
+        -ms-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -o-transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes title {
+    0% {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+@keyframes title {
+    0% {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+/* FONTS */
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* placeholders reset */
+
+input::-webkit-input-placeholder {
+    color: black;
+}
+input::-moz-placeholder {
+    color: black;
+}
+/* Style Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+input,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+}
+ol,
+ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+}
+blockquote,
+q {
+    quotes: """";
+}
+.clrfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+/* End Style Reset */
+
+/* FrontTemp */
+
+.cont-width {
+    width: 1000px;
+    margin: auto;
+    /* content width */
+}
+.h-cont-width {
+    width: 50%;
+    /* half content width */
+}
+.full-width {
+    width: 100%;
+    /* content width */
+}
+.page-cont {
+    text-align: center;
+}
+.clickable-cont {
+    background: rgba(0, 0, 0, 0) url("../img/game-backfone.jpg") repeat scroll 0 0;
+    background-size: cover;
+    border: 6px solid rgb(0, 128, 0);
+    border-radius: 10px;
+    display: block;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    width: 500px;
+}
+.start-prev.start-logo ~ .game-container .click-me {
+    height: 50px;
+    left: 38% !important;
+    top: 12% !important;
+    width: 50px;
+}
+.click-me {
+    border: 2px dashed rgb(255, 255, 255);
+    border-radius: 7px;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    -webkit-animation: 2s linear 0s normal none infinite running mymove;
+    animation: 2s linear 0s normal none infinite running mymove;
+    -webkit-transform-origin: right center 0;
+    transform-origin: right center 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.game-container {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.u-score {
+    color: rgb(255, 99, 71);
+    display: inline-block;
+    font: 700 41px/1 arial;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.start-prev {
+    background-color: rgba(128, 128, 128, 0.6);
+    border: medium none;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font: 700 63px/1 comic sans ms;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    outline: medium none;
+    padding-top: 96px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    -webkit-animation: 2s linear 0s normal none infinite running title;
+    animation: 2s linear 0s normal none infinite running title;
+}
+.start-prev.hide {
+    display: none;
+}
+h1 {
+    font: 46px/1 comic sans ms;
+    padding: 25px;
+    text-align: center;
+}
+.game-infobar {
+    margin: auto;
+    width: 560px;
+}
+.timer {
+    float: left;
+}
+.score {
+    color: rgb(165, 42, 42);
+    display: inline-block;
+    float: right;
+    font: 700 16px/1 arial;
+    text-transform: uppercase;
+}
+.reset-btn {
+    background-color: rgb(37, 96, 128);
+    border: 3px solid rgb(21, 56, 76);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font: 25px/1 comic sans ms;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.reset-btn:hover {
+    background-color: rgb(43, 112, 145);
+}
+.timer-controls {
+    display: inline-block;
+    margin-left: 85px;
+}
+.timer-count {
+    color: rgb(70, 130, 180);
+    display: inline-block;
+    font: 700 34px/1 arial;
+    vertical-align: middle;
+}
+.timer {
+    color: rgb(219, 112, 147);
+    float: left;
+    font: 19px/1"Comic Sans MS";
+}
