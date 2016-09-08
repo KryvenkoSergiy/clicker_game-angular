@@ -241,7 +241,7 @@ q {
 }
 .click-me {
     border: 2px dashed rgb(255, 255, 255);
-    border-radius: 7px;
+    border-radius: 50%;
     cursor: pointer;
     height: 20px;
     position: absolute;
@@ -255,6 +255,9 @@ q {
     -ms-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+}
+.click-me:active {
+  background-color: white;
 }
 .game-container {
     height: 100%;
