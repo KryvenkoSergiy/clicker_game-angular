@@ -1,2 +1,2 @@
 # clicker_game-angular-
-clickergame on agularJS
+https://kryvenkosergiy.github.io/clicker_game-angular/
